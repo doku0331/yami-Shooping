@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap網頁</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  </head>
+ <style>
+	 *{font-family: sans-serif,"微軟正黑體";}
+	 body.html{
+	 height:100%;
+	 }
+	 .bg{
+	 background-image:url("img/back.jpg");
+	 height:100%;
+	 background-position:center;
+	 background-repeat:no-repeat;
+	 background-size:cover;}
+ </style>
+ 
+ <body style="padding-top:50px;">
+ <!--導覽列-->   
+	<nav class="navbar navbar-inverse navbar-fixed-top">        
+      <div class="container-fluid">
+        <div class="navbar-header">
+		  <a class="navbar-brand" 
+		  href="index.html"style="color:red;font-weight:bold">暗黑購物網</a>
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">導覽按鈕</span>
+              <span class="icon-bar" style="background:red"></span>
+              <span class="icon-bar" style="background:red"></span>
+			  <span class="icon-bar" style="background:red"></span>
+          </button>          
+        </div>
+		
+		<div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+		    <li><a href="index.html" style="font-weight:bold">首頁</a></li>
+            <li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="about.html"
+				style="color:red;font-weight:bold" role="button">關於我們<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">關於我們</li>
+						<li><a href="about.html">關於信仰</a></li>
+						<li class="disabled"><a href="about.html">關於組織(需要幹部以上權限)</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">關於分析</li>
+						<li><a href="about2.html">對於這次的網頁</a></li>
+						<li><a href="about3.html">我喜歡的網頁</a></li>
+					</ul>
+			</li>
+			<li><a href="introduction.html" style="font-weight:bold">瀏覽商品</a></li>
+			<li><a href="login.html"style="color:red;font-weight:bold">登入</a></li>
+          
+		<form class="navbar-form navbar-right">
+			<div class="form-group has-feedback">
+				<input type="search" class="form-control" placeholder="想找些什麼?">
+				<span class="glyphicon glyphicon-search form-control-feedback"></span>
+			</div>
+			<button type="submit" class="btn btn-default">搜尋</button>
+		</form>
+          </ul>
+		</div>
+		
+	  </div>
+    </nav>
+<!--main-->
+
+<div class="bg">
+<div class="container">
+	<div class="row" style="background:white;">
+		
+		<article>
+				<div class="col-md-12 col-sm-12">
+				<!--導覽員件-->
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab">商品</a></li>
+					
+					<li><a href="#tab2" data-toggle="tab">Q&A</a></li>
+					
+					<li><a href="#tab3" data-toggle="tab">購買人數</a></li>
+				</ul>
+				<!--導覽頁面-->
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="tab1">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="img\good2.jpg" class="img-responsive" width:35%>
+							</div>
+							<div class="col-md-6 col-md-pull-1">
+								<h1>詛咒石像</h1>
+								<p>得些員對車用微難還上這……轉的爸陸走年構並著論以美可結答呢立，適說紅體許新加日只的他一怎容
+								一歌專的經員成夫要太、理影道子故，已專遠，出們還學滿正人喜廣，離山知通果建問廣們意子在會理果
+								八仍一電清！正黑熱為度氣而想屋……高體舞以沒小變們，新臺我手她改民生開行己多；多參院科今關人設
+								如。起們上出為保強時四首營他變、不日巴獎感我便……油人路斷此青，風意房痛我會，後木營點事就能中
+								，開時為本高物部何長一方是做去來個通子原得我通少知代室……情旅內。出居印化來。們遠白而。相可共
+								人這益車她形任身產過別業不，選都新了檢家能飛設型。</p>
+								<!-- 觸發互動視窗的按鈕 -->
+				<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal2">開始訂購</button>
+	    
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade in" id="tab2">
+						<h3>問題</h3>
+						<h3>user</h3>
+						<p class="lead">請問有或嗎</p>
+						<hr>
+						<h3>問題</h3>
+						<h3>user</h3>
+						<p class="lead">請問有或嗎</p>
+						<hr>
+						<h3>問題</h3>
+						<h3>user</h3>
+						<p class="lead">請問有或嗎</p>
+						<hr>
+						<h3>問題</h3>
+						<h3>user</h3>
+						<p class="lead">請問有或嗎</p>
+						
+					</div>
+					<div class="tab-pane fade in" id="tab3">
+						<table class="table table-striped table-hover tabble-condensed">
+							<thead>
+								<tr>
+									<th>買家</th>
+									<th>數量</th>
+									<th>時間</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>jaofja**</td>
+									<td>1</td>
+									<td>2019/12/22</td>
+								</tr>
+								<tr>
+									<td>jaofja**</td>
+									<td>1</td>
+									<td>2019/12/22</td>
+								</tr>
+								<tr>
+									<td>jaofja**</td>
+									<td>1</td>
+									<td>2019/12/22</td>
+								</tr>
+								<tr>
+									<td>jaofja**</td>
+									<td>1</td>
+									<td>2019/12/22</td>
+								</tr>
+								<tr>
+									<td>jaofja**</td>
+									<td>1</td>
+									<td>2019/12/22</td>
+								</tr>
+								<tr>
+									<td>jaofja**</td>
+									<td>1</td>
+									<td>2019/12/22</td>
+								</tr>
+								<tr>
+									<td>jaofja**</td>
+									<td>1</td>
+									<td>2019/12/22</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				<hr>
+				</div>
+				</div>
+		</article>
+		<aside>
+				<div class="col-md-12 col-sm-12">
+				<div class="row">
+				<div class="col-md-12">
+					<h3>其他商品</h3>
+					<hr>
+				</div>
+				<!--面板1-->
+				<div class="col-md-3 col-sm-6 col-xs-8">
+				<div class="thumbnail">
+					<img src="img\good1.jpg">
+					<div class="caption">
+						<h3>石中劍</h3>
+						<p>價格$870000</p>
+						<p><a href="good2.html" class="btn btn-danger" role="button">詳細資料</a></p>
+					</div>
+				</div>
+				</div>
+				<!--面板2-->
+				<div class="col-md-3 col-sm-6 col-xs-8">
+				<div class="thumbnail">
+					<img src="img\good2.jpg">
+					<div class="caption">
+						<h3>詛咒石像</h3>
+						<p>價格$30000</p>
+						<p><a href="good1.html" class="btn btn-danger" role="button">詳細資料</a></p>
+					</div>
+				</div>
+				</div>
+					<!--面板3-->
+				<div class="col-md-3 col-sm-6 col-xs-8">
+				<div class="thumbnail">
+					<img src="img\good3.jpg">
+					<div class="caption">
+						<h3>巫術石刀</h3>
+						<p>價格$50000</p>
+						<p><a href="good.html" class="btn btn-danger" role="button">詳細資料</a></p>
+					</div>
+				</div>
+				</div>
+					<!--面板4-->
+				<div class="col-md-3 col-sm-6 col-xs-8">
+				<div class="thumbnail">
+					<img src="img\good4.jpg">
+					<div class="caption">
+						<h3>詛咒稻草人</h3>
+						<p>價格$50000</p>
+						<p><a href="good3.html" class="btn btn-danger" role="button">詳細資料</a></p>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		</aside>
+	</div>
+</div>
+</div>
+</div>
+<!-- 互動視窗 -->
+	  <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <h3 class="modal-title">詛咒石像</h3>
+            </div>
+			
+            <div class="modal-body">
+              <img src="img\good2.jpg" width="50%" class="img-responsive center-block">
+			  <p class="h3 text-right">$30000</p>
+            </div>
+			
+            <div class="modal-footer">
+              <button type="button" onclick="javascript:alert('已加入購物車');" class="btn btn-primary btn-lg">放入購物車</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--footer-->
+<footer>
+	<div class="bg" style="color:white;">
+	<div class="container">
+	<p>&copy; 2019 </p>
+	<p class="text-right"><a href="#">回頁首</a></p>
+	</div>
+	</div>
+</footer>
+  </body>
+</html>

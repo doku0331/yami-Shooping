@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>地下最大購物網-暗黑購物網</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+ <style>
+	 *{font-family: sans-serif,"微軟正黑體";}
+	 body.html{
+	 height:100%;
+	 }
+	 .bg{
+	 background-image:url("img/back.jpg");
+	 height:100%;
+	 background-position:center;
+	 background-repeat:no-repeat;
+	 background-size:cover;}
+ </style>
+ <script>
+	alert("本網頁因文字太多，本網頁使用亂數產生器。有亂字純屬正常。")
+	var X= prompt("請輸入「yes」已確認您已知風險")
+	if (X=="yes")
+	alert("歡迎您")
+	else alert("下次請輸入yes")
+ </script>
+  </head>
+ <body style="background-image:url('img/back.jpg')">
+    <!--導覽列-->   
+	<nav class="navbar navbar-inverse navbar-fixed-top">        
+      <div class="container-fluid">
+        <div class="navbar-header">
+		  <a class="navbar-brand" 
+		  href="index.html"style="color:red;font-weight:bold">暗黑購物網</a>
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">導覽按鈕</span>
+              <span class="icon-bar" style="background:red"></span>
+              <span class="icon-bar" style="background:red"></span>
+			  <span class="icon-bar" style="background:red"></span>
+          </button>          
+        </div>
+		
+		<div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+		    <li><a href="index.html" style="font-weight:bold">首頁</a></li>
+            <li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="about.html"
+				style="color:red;font-weight:bold" role="button">關於我們<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">關於我們</li>
+						<li><a href="about.html">關於信仰</a></li>
+						<li class="disabled"><a href="about.html">關於組織(需要幹部以上權限)</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">關於分析</li>
+						<li><a href="about2.html">對於這次的網頁</a></li>
+						<li><a href="about3.html">我喜歡的網頁</a></li>
+					</ul>
+			</li>
+			<li><a href="introduction.html" style="font-weight:bold">瀏覽商品</a></li>
+			<li><a href="login.html"style="color:red;font-weight:bold">登入</a></li>
+          
+		<form class="navbar-form navbar-right">
+			<div class="form-group has-feedback">
+				<input type="search" class="form-control" placeholder="想找些什麼?">
+				<span class="glyphicon glyphicon-search form-control-feedback"></span>
+			</div>
+			<button type="submit" class="btn btn-default">搜尋</button>
+		</form>
+          </ul>
+		</div>
+		
+	  </div>
+    </nav>
+<!--main區域-->
+
+<div class="jumbotron" style="background-image:url("img/back.jpg")">
+	<div class="container-fluid">
+	<div id="myCarousel" class="carousel slide">
+      <!-- 輪播指示 -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li><br><br>
+		<a class="bt btn-default btn-lg" href="introduction.html" role="button">看看商品</a>
+      </ol>
+
+      <!-- 輪播內容 -->
+      <div class="carousel-inner">
+		<div class="item active">
+  		  <img src="img\carousel1.png">     
+        </div>
+		
+		<div class="item">
+          <img src="img\carousel2.jpg">
+        </div>
+		
+		<div class="item">
+          <img src="img\carousel3.jpg">
+        </div>
+      </div>
+
+      <!-- 輪播控制 -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+		
+	</div>
+</div>
+
+
+
+<!--footer-->
+<footer>
+	<div class="bg" style="color:white;">
+	<div class="container">
+	<p>&copy; 2019 </p>
+	<p class="text-right"><a href="#">回頁首</a></p>
+	</div>
+	</div>
+</footer>
+  </body>
+</html>
